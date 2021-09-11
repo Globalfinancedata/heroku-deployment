@@ -17,6 +17,7 @@ def list_tasks():
         return jsonify(todo_list), 200
 
 @app.route("/")
+def landing_page():
     return '<h1>This is the Ahsan API.</h1>'
 
 @app.route( "/todo/api/v1/<task_id>/task", methods=['GET'])
